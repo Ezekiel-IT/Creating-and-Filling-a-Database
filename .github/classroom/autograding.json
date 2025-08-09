@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Student creates a database called 'people.db'",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest ./tests/database_exists.py::test_database_exists",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Student creates a table 'called' users in the people.db database",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest ./tests/users_table_exists.py::test_users_table_exists",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 7.5
+    },
+    {
+      "name": "Student inserted all user records into the users table as shown in the example output",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest ./tests/records_inserted_in_db.py::test_number_of_users",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 7.5
+    }
+  ]
+}
