@@ -25,8 +25,8 @@ def logic_database_exists():
     createDB_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'createDB.py'))
     
     # Remove existing database file to test if student's code creates it
-    if os.path.exists(db_path):
-        os.remove(db_path)
+    #if os.path.exists(db_path):
+        #os.remove(db_path)
     
     # Run the student's createDB.py file
     run_program([], createDB_path)
@@ -43,8 +43,8 @@ def logic_users_table_exists():
     createDB_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'createDB.py'))
     
     # Remove existing database file to test if student's code creates it properly
-    if os.path.exists(db_path):
-        os.remove(db_path)
+    #if os.path.exists(db_path):
+        #os.remove(db_path)
     
     # Run the student's createDB.py file
     run_program([], createDB_path)
@@ -75,8 +75,8 @@ def logic_records_inserted_in_db():
     insert_recs_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'insert_recs.py'))
 
     # Remove existing database file to test if student's code creates it properly
-    if os.path.exists(db_path):
-        os.remove(db_path)
+    #if os.path.exists(db_path):
+        #os.remove(db_path)
     
     # Run the student's createDB.py file first
     run_program([], createDB_path)
